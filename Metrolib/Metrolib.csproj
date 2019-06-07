@@ -65,7 +65,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\Buttons\FileAddButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Buttons\FolderAddButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\Buttons\FolderOpenButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Buttons\ImportButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -305,6 +317,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Controls\ToggleContentPresenter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\Tree\FlatTreeViewItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -342,6 +358,9 @@
     <Compile Include="Controls\Buttons\CollapseAllButton.cs" />
     <Compile Include="Controls\Buttons\DownloadButton.cs" />
     <Compile Include="Controls\Buttons\ExpandAllButton.cs" />
+    <Compile Include="Controls\Buttons\FileAddButton.cs" />
+    <Compile Include="Controls\Buttons\FolderAddButton.cs" />
+    <Compile Include="Controls\Buttons\ImportButton.cs" />
     <Compile Include="Controls\Buttons\MaximizeButton.cs" />
     <Compile Include="Controls\Buttons\MinimizeButton.cs" />
     <Compile Include="Controls\Buttons\FolderOpenButton.cs" />
@@ -384,7 +403,9 @@
     <Compile Include="Controls\ToggleButtons\AlarmToggleButton.cs" />
     <Compile Include="Controls\ToggleButtons\ItemsToggleButton.cs" />
     <Compile Include="Controls\ToggleButtons\ToggleButtonItemViewModel.cs" />
+    <Compile Include="Controls\ToggleContentPresenter.cs" />
     <Compile Include="Converters\ColorToBrushConverter.cs" />
+    <Compile Include="Converters\Unit.cs" />
     <Compile Include="DelegateCommand2.cs" />
     <Compile Include="FrameworkElementExtensions.cs" />
     <Compile Include="ListSliceDebugView.cs" />
@@ -549,9 +570,7 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
